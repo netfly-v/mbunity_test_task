@@ -12,13 +12,13 @@ import {route} from './constants/route';
 
 const PublicRoutes = [
   <Route key="main" path={'*'} element={<HomePage />} />,
-  <Route key="features" path={route.features.path} element={<FeaturesPage />} />,
-  <Route key="blog" path={route.blog.path} element={<BlogPage />} />,
-  <Route key="shop" path={route.shop.path} element={<ShopPage />} />,
-  <Route key="about" path={route.about.path} element={<AboutPage />} />,
-  <Route key="contact" path={route.contact.path} element={<ContactPage />} />,
-  <Route key="user" path={route.user.path} element={<UserPage />} />,
-  <Route key="cart" path={route.cart.path} element={<CartPage />} />,
+  <Route key="features" path={route.features} element={<FeaturesPage />} />,
+  <Route key="blog" path={route.blog} element={<BlogPage />} />,
+  <Route key="shop" path={route.shop} element={<ShopPage />} />,
+  <Route key="about" path={route.about} element={<AboutPage />} />,
+  <Route key="contact" path={route.contact} element={<ContactPage />} />,
+  <Route key="user" path={route.user} element={<UserPage />} />,
+  <Route key="cart" path={route.cart} element={<CartPage />} />,
 ];
 
 const Routes: React.FC = () => {

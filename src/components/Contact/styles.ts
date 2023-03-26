@@ -100,6 +100,10 @@ export const ContactLine = styled.div`
   }
 `;
 
+export const StyledContactSvgIcon = styled(IconSvg)`
+  flex-shrink: 0;
+`;
+
 export const StyledContactLineText = styled(Typography)`
   margin-left: 25px;
   ${Media.down.l} {
@@ -150,6 +154,11 @@ export const Label = styled.label`
   ${Media.down.l} {
     margin-top: 20px;
   }
+`;
+
+export const RadioButtonLabel = styled.label`
+  display: flex;
+  align-items: center;
 `;
 
 export const StyledElementTitle = styled(Typography)`

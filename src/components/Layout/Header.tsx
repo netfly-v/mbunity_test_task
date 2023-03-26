@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
       {isMobile ? (
         <>
           <MobileHeaderWrapper $isMobileMenuOpen={isMobileMenuOpen}>
-            <StyledLink to={route.home.path}>
+            <StyledLink to={route.home}>
               <IconSvg type={'logo'} width="119" height="24" fillChildren={isMobileMenuOpen ? 'white' : undefined} />
             </StyledLink>
 
@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
         </>
       ) : (
         <>
-          <StyledLink to={route.home.path}>
+          <StyledLink to={route.home}>
             <IconSvg type={'logo'} width="119" height="24" />
           </StyledLink>
           <Menu />
@@ -50,42 +50,42 @@ export const Header: React.FC = () => {
 const Menu: React.FC = () => {
   return (
     <MenuWrapper>
-      <StyledLink to={route.home.path}>
+      <StyledLink to={route.home}>
         <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           Home
         </MenuItemName>
       </StyledLink>
-      <StyledLink to={route.features.path}>
+      <StyledLink to={route.features}>
         <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           Features
         </MenuItemName>
         <StyledArrow type={'arrowDown'} width="12" height="7" fillChildren={isMobile ? 'white' : undefined} />
       </StyledLink>
-      <StyledLink to={route.blog.path}>
+      <StyledLink to={route.blog}>
         <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           Blog
         </MenuItemName>
       </StyledLink>
-      <StyledLink to={route.shop.path}>
+      <StyledLink to={route.shop}>
         <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           Shop
         </MenuItemName>
       </StyledLink>
-      <StyledLink to={route.about.path}>
+      <StyledLink to={route.about}>
         <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           About
         </MenuItemName>
       </StyledLink>
-      <StyledLink to={route.contact.path}>
-        <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'} weight="semi-bold">
+      <StyledLink to={route.contact}>
+        <MenuItemName variant="menu" color={isMobile ? 'white' : 'lightBlack'}>
           Contact
         </MenuItemName>
       </StyledLink>
       <SvgIconsWrapper>
-        <StyledLink to={route.user.path}>
+        <StyledLink to={route.user}>
           <IconSvg type="user" width="31" height="32" fillChildren={isMobile ? 'white' : undefined} />
         </StyledLink>
-        <StyledLink to={route.cart.path} $isLast>
+        <StyledLink to={route.cart} $isLast>
           <IconSvg type="cart" width="31" height="32" fillChildren={isMobile ? 'white' : undefined} />
         </StyledLink>
       </SvgIconsWrapper>

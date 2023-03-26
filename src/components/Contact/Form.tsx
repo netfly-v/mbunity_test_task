@@ -1,5 +1,4 @@
 import React from 'react';
-import {IconSvg} from '../../ui-kit/icons';
 import {Typography} from '../../ui-kit/Typography/Text';
 import {
   ContactFormWrapper,
@@ -8,6 +7,7 @@ import {
   FormDataWrapper,
   StyledContactInfoSubTitle,
   ContactLine,
+  StyledContactSvgIcon,
   StyledContactLineText,
   SocialNetworksBlock,
   StyledIcon,
@@ -16,6 +16,7 @@ import {
   FormElementWrapper,
   FieldSet,
   Label,
+  RadioButtonLabel,
   Input,
   StyledElementTitle,
   RadioButtonsWrapper,
@@ -34,15 +35,15 @@ const ContactInfo: React.FC = () => {
       </StyledContactInfoSubTitle>
       <ContactInfoBlock>
         <ContactLine>
-          <IconSvg type="phone" width="24" height="24" />
+          <StyledContactSvgIcon type="phone" width="24" height="24" />
           <StyledContactLineText variant="h4">+1012 3456 789</StyledContactLineText>
         </ContactLine>
         <ContactLine>
-          <IconSvg type="email" width="24" height="24" />
+          <StyledContactSvgIcon type="email" width="24" height="24" />
           <StyledContactLineText variant="h4">demo@gmail.com</StyledContactLineText>
         </ContactLine>
         <ContactLine>
-          <IconSvg type="location" width="24" height="24" />
+          <StyledContactSvgIcon type="location" width="24" height="24" />
           <StyledContactLineText variant="h4">
             132 Dartmouth Street Boston, Massachusetts 02156 United States
           </StyledContactLineText>
@@ -100,31 +101,39 @@ const FormData: React.FC = () => {
               </Typography>
               <RadioButtonsWrapper>
                 <RadioOptionWrapper>
-                  <StyledRadioInput type="radio" name="subject" value="value1" />
-                  <Typography variant="h6" color="black">
-                    General Inquiry
-                  </Typography>
+                  <RadioButtonLabel>
+                    <StyledRadioInput type="radio" name="subject" value="value1" />
+                    <Typography variant="h6" color="black">
+                      General Inquiry
+                    </Typography>
+                  </RadioButtonLabel>
                 </RadioOptionWrapper>
 
                 <RadioOptionWrapper>
-                  <StyledRadioInput type="radio" name="subject" value="value2" />
-                  <Typography variant="h6" color="black">
-                    General Inquiry
-                  </Typography>
+                  <RadioButtonLabel>
+                    <StyledRadioInput type="radio" name="subject" value="value2" />
+                    <Typography variant="h6" color="black">
+                      General Inquiry
+                    </Typography>
+                  </RadioButtonLabel>
                 </RadioOptionWrapper>
 
                 <RadioOptionWrapper>
-                  <StyledRadioInput type="radio" name="subject" value="value3" />
-                  <Typography variant="h6" color="black">
-                    General Inquiry
-                  </Typography>
+                  <RadioButtonLabel>
+                    <StyledRadioInput type="radio" name="subject" value="value3" />
+                    <Typography variant="h6" color="black">
+                      General Inquiry
+                    </Typography>
+                  </RadioButtonLabel>
                 </RadioOptionWrapper>
 
                 <RadioOptionWrapper>
-                  <StyledRadioInput type="radio" name="subject" value="value4" />
-                  <Typography variant="h6" color="black">
-                    General Inquiry
-                  </Typography>
+                  <RadioButtonLabel>
+                    <StyledRadioInput type="radio" name="subject" value="value4" />
+                    <Typography variant="h6" color="black">
+                      General Inquiry
+                    </Typography>
+                  </RadioButtonLabel>
                 </RadioOptionWrapper>
               </RadioButtonsWrapper>
             </Label>
