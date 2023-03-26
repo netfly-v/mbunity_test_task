@@ -4,6 +4,7 @@ import {Normalize} from 'styled-normalize';
 import {AppLayout} from './components/Layout';
 import Routes from './Routes';
 import {defaultTheme} from './ui-kit/theme/theme';
+import './ui-kit/fonts/fonts.css';
 
 const App = () => {
   return (
