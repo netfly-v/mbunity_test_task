@@ -69,6 +69,12 @@ export const FormDataWrapper = styled.div`
   background-repeat: no-repeat;
   ${Media.down.l} {
     width: 100%;
+    background-position: right 350px bottom -50px;
+    background-size: 20%;
+  }
+  ${Media.down.m} {
+    background-size: 50%;
+    background-position: right 160px bottom -60px;
   }
 `;
 
